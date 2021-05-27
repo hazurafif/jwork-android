@@ -15,28 +15,28 @@
         >
 
         <EditText
-            android:id="@+id/etName"
+            android:id="@+id/etNameR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name"
             />
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/etEmailR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/etPasswordR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Register" />

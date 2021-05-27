@@ -24,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         EditText etNameR = findViewById(R.id.etNameR);
-        EditText etEmailR = findViewById(R.id.etEmail);
+        EditText etEmailR = findViewById(R.id.etEmailR);
         EditText etPasswordR = findViewById(R.id.etPasswordR);
         Button btnRegister = findViewById(R.id.btnRegister);
 
@@ -45,6 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                         } catch (JSONException e) {
                             Toast.makeText(RegisterActivity.this,"Register Failed", Toast.LENGTH_LONG).show();
+                            e.printStackTrace();
                         }
                     }
                 };

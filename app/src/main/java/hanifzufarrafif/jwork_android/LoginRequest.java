@@ -10,7 +10,7 @@ import java.util.Map;
 import static com.android.volley.Request.Method.POST;
 
 public class LoginRequest extends StringRequest{
-    private static final String URL = "http://192.168.100.10:8080/jobseeker/register";
+    private static final String URL = "http://192.168.100.10:8080/jobseeker/login";
     private Map<String, String> params;
 
     public LoginRequest(String email, String password, Response.Listener<String> listener) {

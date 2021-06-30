@@ -1,5 +1,12 @@
 package hanifzufarrafif.jwork_android;
 
+/**
+ * Activity Class untuk aplikasi job (1 a.)
+ *
+ * @author Hanif Zufar Rafif
+ * @version 1.0
+ * @since 25 Juni 2021
+ */
 public class Job {
     private int id;
     private String name;
@@ -7,7 +14,7 @@ public class Job {
     private int fee;
     private String category;
 
-    public Job(int id, String name, Recruiter recruiter, int fee, String category){
+    public Job(int id, String name, Recruiter recruiter, int fee, String category) {
         this.id = id;
         this.name = name;
         this.recruiter = recruiter;
@@ -15,11 +22,11 @@ public class Job {
         this.category = category;
     }
 
-    public int getId() {
+    public int getId (){
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(int id){
         this.id = id;
     }
 
@@ -54,5 +61,5 @@ public class Job {
     public void setCategory(String category) {
         this.category = category;
     }
-}
 
+}

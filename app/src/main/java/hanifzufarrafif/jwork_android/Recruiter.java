@@ -1,5 +1,12 @@
 package hanifzufarrafif.jwork_android;
 
+/**
+ * Activity Class untuk aplikasi job (1 a.)
+ *
+ * @author Hanif Zufar Rafif
+ * @version 1.0
+ * @since 25 Juni 2021
+ */
 public class Recruiter {
     private int id;
     private String name;

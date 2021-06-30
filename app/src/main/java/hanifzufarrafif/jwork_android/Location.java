@@ -1,11 +1,18 @@
 package hanifzufarrafif.jwork_android;
 
+/**
+ * Activity Class untuk aplikasi job (1 a.)
+ *
+ * @author Hanif Zufar Rafif
+ * @version 1.0
+ * @since 25 Juni 2021
+ */
 public class Location {
     private String province;
     private String description;
     private String city;
 
-    public Location(String province, String city, String description){
+    public Location(String province, String description, String city) {
         this.province = province;
         this.description = description;
         this.city = city;
@@ -34,6 +41,8 @@ public class Location {
     public void setCity(String city) {
         this.city = city;
     }
+
 }
+
 
 

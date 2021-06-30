@@ -9,13 +9,19 @@ import java.util.Map;
 
 import static com.android.volley.Request.Method.POST;
 
-
+/**
+ * Activity Class untuk aplikasi job (1 a.)
+ *
+ * @author Hanif Zufar Rafif
+ * @version 1.0
+ * @since 25 Juni 2021
+ */
 public class RegisterRequest extends StringRequest {
     private static final String URL = "http://10.0.2.2:8080/jobseeker/register";
     private Map<String, String> params;
 
-    public RegisterRequest(String name, String email, String password, Response.Listener<String> listener) {
-        super(POST, URL, listener, null);
+    public RegisterRequest(String name, String email, String password, Response.Listener<String> listener){
+        super(Method.POST, URL, listener, null);
         params = new HashMap<>();
         params.put("name", name);
         params.put("email", email);
@@ -23,7 +29,7 @@ public class RegisterRequest extends StringRequest {
     }
 
     @Override
-    protected Map<String, String> getParams() throws AuthFailureError{
+    public Map<String, String> getParams() throws AuthFailureError {
         return params;
     }
 }

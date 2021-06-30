@@ -11,6 +11,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Activity Class untuk aplikasi job (1 a.)
+ *
+ * @author Hanif Zufar Rafif
+ * @version 1.0
+ * @since 25 Juni 2021
+ */
 public class MainListAdapter extends BaseExpandableListAdapter {
 
     private Context _context;
@@ -83,7 +90,7 @@ public class MainListAdapter extends BaseExpandableListAdapter {
 
         TextView ListHeader = (TextView) convertView.findViewById(R.id.lblListHeader);
         ListHeader.setTypeface(null, Typeface.BOLD);
-        ListHeader.setText("Recruiter" + headerTitle.getName());
+        ListHeader.setText("Recruiter " + headerTitle.getName());
 
         return convertView;
     }
